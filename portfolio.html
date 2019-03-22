@@ -8,17 +8,92 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
-        body {
-      background-color: black;
-      }
-</style>
+      body {
+    background-color: black;
+    
+    }
 
+    .center-title
+    {
+        margin: 0 auto;
+        width: 200px; 
+        padding-top: 2%;
+        text-align: center;
+    }
+    .center-main
+        {
+            margin: 0 auto;
+            width: 400px; 
+            padding-top: 3%;
+            font-size: 40px;
+            text-align: center;
+        }
+        .center-secondary
+        {
+            margin: 0 auto;
+            width: 200px; 
+            padding-top:2%;
+            text-align: center;
+        }
+
+            /* unvisited link */
+            a:link {
+    color: grey;
+    }
+
+    /* visited link */
+    a:visited {
+    color: grey;
+    }
+
+    /* mouse over link */
+    a:hover {
+    color: lightgray;
+    }
+
+    /* selected link */
+    a:active {
+    color: lightgray;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
 </head>
 <body>
   
-
+    <h1 class="center-title text-secondary">Portfolio</h1>
     
+    <div class="center-main">
+        <div><a href="#">Blog - Coming Soon...</a></div>
+        <div><a href="http://www.spanczakphillips.com">Wedding Website</a></div>
+        <div><a href="https://github.com/nphillips-dev/portfolio">Github</a></div>
+        <div><a href="http://dev.spanczakphillips.com">Whats in the dev site today?</a></div>
+    </div>
+    <div class="center-secondary">
+      <a href="https://twitter.com/nphillips_dev"  target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/neil-phillips/"  target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://www.reddit.com/user/nphillips_dev"  target="_blank" class="fa fa-reddit"></a>
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="bio.html">Biography</a></div>
+    </div>
+
 </body>
 </html>

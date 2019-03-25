@@ -17,6 +17,19 @@ color: #9f9f9f;
     padding-top:2%;
 }
 
+.center-bio-title
+{
+    margin: 0 auto;
+    width: 200px; 
+    padding-top: 2%;
+}
+.center-bio-main
+{
+    margin: 0 auto;
+    width: 600px; 
+    height: 500px;
+}
+
 footer
 {
     padding-top:15%;
@@ -41,3 +54,41 @@ color: lightgray;
 a:active {
 color: lightgray;
 }
+
+/* social media*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.center-portfolio-title
+{
+    margin: 0 auto;
+    width: 200px; 
+    padding-top: 2%;
+    text-align: center;
+}
+.center-portfolio-main
+    {
+        margin: 0 auto;
+        width: 400px; 
+        padding-top: 3%;
+        font-size: 40px;
+        text-align: center;
+    }
+    .center-portfolio-secondary
+    {
+        margin: 0 auto;
+        width: 200px; 
+        padding-top:2%;
+        text-align: center;
+    }

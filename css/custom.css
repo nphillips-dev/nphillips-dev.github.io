@@ -1,0 +1,43 @@
+body {
+background-color: black;
+color: #9f9f9f;
+}
+
+.center-main
+{
+    margin: 0 auto;
+    width: 330px; 
+    padding-top: 15%;
+    font-size: 100px;
+}
+.center-secondary
+{
+    margin: 0 auto;
+    width: 100px; 
+    padding-top:2%;
+}
+
+footer
+{
+    padding-top:15%;
+}
+
+/* unvisited link */
+a:link {
+color: #9f9f9f;
+}
+
+/* visited link */
+a:visited {
+color: #9f9f9f;
+}
+
+/* mouse over link */
+a:hover {
+color: lightgray;
+}
+
+/* selected link */
+a:active {
+color: lightgray;
+}

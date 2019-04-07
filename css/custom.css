@@ -2,7 +2,7 @@ body {
 background-color: black;
 color: #9f9f9f;
 }
-
+  
 .center
 {
     margin: 0 auto;
@@ -10,19 +10,20 @@ color: #9f9f9f;
     padding-top: 5%;
     text-align: center;
 }
-
-.center-main
+.index-title
 {
-    margin: 0 auto;
-    width: 330px; 
-    padding-top: 15%;
     font-size: 100px;
+    text-align: center;
 }
-.center-secondary
+
+.index-subtitle
 {
-    margin: 0 auto;
-    width: 100px; 
-    padding-top:2%;
+    text-align: center;
+}
+
+.jumbotron
+{
+    background: transparent;
 }
 
 .center-bio-title
@@ -116,3 +117,53 @@ text-align: center;
     font-size: 40px;
     text-align: center;
 }
+
+.navbar-custom {
+    background-color: linear-gradient(#000, #000);
+	background-color:  #000;
+    color:#9f9f9f;
+    border-radius:0;
+	margin:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#9f9f9f;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #9f9f9f;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #474747;
+}
+
+.navbar-custom .navbar-brand {
+    color:#9f9f9f;
+}
+.navbar-custom .navbar-toggle {
+    background-color:linear-gradient(#000, #000);
+}
+.navbar-custom .icon-bar
+ {
+    background-color:#000;
+}
+/*highlight text on pages, same colour as nav hover*/
+::selection 
+{
+	color: #9f9f9f;
+	background: #474747;
+}
+
+::-moz-selection
+{ 
+color: #9f9f9f;
+background: #474747;
+}
+

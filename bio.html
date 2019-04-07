@@ -22,31 +22,49 @@ gtag('config', 'UA-136768252-1');
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    
+
+  <nav class="navbar navbar-expand-sm navbar-custom navbar-dark fixed-bottom justify-content-center">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">&lt;np /&gt;</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" href="bio.html">Biography</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="writing.html">Writing</a>
+              </li>  
+          </ul>
+      </div> 
+
+      <span class="navbar-text text-muted"> Version: 1.5</span>
+  </nav>
+
+  <div class="container">
     <h1 class="center-bio-title">Biography</h1>
-    <div class="center-bio-main">
-        <?xml version="1.0" standalone="no"?>
-        <svg
-          viewBox="0 0 600 500"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g transform="translate(300,300)">
-            <path d="M157.5,-95.2C201.8,-69.9,234,-4.6,216.6,40.6C199.3,85.8,132.4,110.9,70.1,138.1C7.8,165.2,-49.9,194.3,-87.1,177.6C-124.4,161,-141.2,98.5,-154,36.7C-166.8,-25,-175.7,-86.1,-149.3,-107.3C-123,-128.4,-61.5,-109.7,-2.5,-107.7C56.6,-105.8,113.1,-120.5,157.5,-95.2Z" fill="#A9A9A9" />
-            <text x="-80" y="0">Developer</text>
-            <text x="-60" y="20">Flash Fiction horror writer</text>
-            <text x="-40" y="40">Blues guitarist</text>
-            <text x="-20" y="60">Viking wannabe</text>
-          </g> 
-        </svg>
+
+    <br>
+
+    <div class="card bg-dark text-white center" style="width:400px">
+      <img class="card-img-top" src="images/me.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h2 class="card-title">Neil Phillips</h2>
+        <p class="card-text">Developer</p>
+        <p class="card-text">Flash Fiction horror writer</p>
+        <p class="card-text">Blues guitarist</p>
+        <p class="card-text">Viking wannabe</p>
+      </div>
     </div>
 
-    <div class="d-flex justify-content-around">
-      <div><a href="index.html">Home</a></div>
-      <div><a href="portfolio.html">Portfolio</a></div>
-    </div>
-    <div class="d-flex justify-content-around">
-        <div><a href="writing.html">Writing</a></div>
-    </div>
+  </div>
     
 </body>
 </html>

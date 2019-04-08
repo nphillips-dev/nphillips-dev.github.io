@@ -176,3 +176,74 @@ color: #9f9f9f;
 background: #474747;
 }
 
+/*animations*/
+.title-animate {
+    position: relative;
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;    
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes title {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes title {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+  
+  .subtitle-animate {
+    position: relative;
+    -webkit-animation-name: subtitle; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: subtitle;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;  
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes subtitle {
+    0%   {left:0px; top:0px;}
+    25%  {left:-500px; top:0px;}
+    50%  {left:-250px; top:-250px;}
+    75%  {left:0px; top:-300px;}
+    100% {left:0px; top:0px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes subtitle {
+    0%   {left:0px; top:0px;}
+    25%  {left:-300px; top:0px;}
+    50%  {left:-300px; top:300px;}
+    75%  {left:0px; top:-100px;}
+    100% {left:0px; top:0px;}
+  }
+  
+  .fade-out {
+      -moz-transition: opacity 4s linear;
+      -o-transition: opacity 4s linear;
+      -webkit-transition: opacity 4s linear;
+      transition: opacity 4s linear;
+      opacity: 1;
+      text-align: center;
+  }
+  
+  .opacity {
+      opacity: 0;
+  }

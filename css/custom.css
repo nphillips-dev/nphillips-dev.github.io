@@ -181,11 +181,11 @@ background: #474747;
     position: relative;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
     animation-name: title;
     animation-duration: 4s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-direction: alternate-reverse;    
   }
   /* Safari 4.0 - 8.0 */
@@ -213,7 +213,7 @@ background: #474747;
     -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
     animation-name: subtitle;
     animation-duration: 4s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-direction: alternate;  
   }
   

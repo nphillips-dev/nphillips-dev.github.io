@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136768252-1"></script>
 <script>
@@ -12,64 +12,44 @@ gtag('js', new Date());
 gtag('config', 'UA-136768252-1');
 </script>
 
-  <title>NPhillips Portfolio - Bio</title>
+<title>NPhillips Portfolio - Bio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/core.css">
   <link rel="stylesheet" href="css/custom.css">
+  <script src="js/custom.js"></script>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark justify-content-center navbar-custom fixed-bottom">
-        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">&lt;np /&gt;</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100" id="navbar">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="bio.html">Biography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="writing.html">Writing</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="version.html">Version</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-  <div class="container">
-    <h1 class="center-bio-title">Biography</h1>
-
-    <br>
-
-    <div class="card bg-dark text-white center" style="width:400px">
-      <div class="card-body">
-        <h2 class="card-title">Neil Phillips</h2>
-        <p class="card-text">
-          I have been a software developer for 5 years now.<br>
-          In a previous life I was a scientist, then I wrote software for those scientist and now I make digital solutions in a more general sense.<br>
-          Outside of work I enjoy writing flash fiction horror stories, links can be found on the writing page.<br>
-          I also play blues guitar, kickbox, partaking in a 1001 beer challenge and im doing an OU degree in software engineering.
-
-
-        </p>
- 
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="bio.html">Biography</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="version.html">Version</a>
       </div>
-      <img class="card-img-bottom" src="images/me.jpg" alt="photo of neil" style="width:100%">
-      <br>
-    </div>
 
+    <div class="container">
+      <div class="row">
+          <h1 class="center-bio-title">Biography</h1>
+      </div>
+
+      <div class="row">
+        <div class="column-threeQuarters">
+            <div class="card">
+                <div class="card-header">
+                  Neil Phillips
+                </div>
+                <div class="card-content">
+                    I have been a software developer for 5 years now.<br>
+                    In a previous life I was a scientist, then I wrote software for those scientist and now I make digital solutions in a more general sense.<br>
+                    Outside of work I enjoy writing flash fiction horror stories, links can be found on the writing page.<br>
+                    I also play blues guitar, kickbox, partaking in a 1001 beer challenge and im doing an OU degree in software engineering.
+                </div>
+                <img class="card-img-bottom" src="images/me.jpg" alt="photo of neil" style="width:55%; height:80%;">
+            </div>
+        </div>
+      </div>
   </div>
     
 </body>

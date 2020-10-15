@@ -23,13 +23,18 @@ gtag('config', 'UA-136768252-1');
 </head>
 <body>
 
-    <div class="w3-nav">
-        <a href="index.html">Home</a>
-        <a class="active" href="bio.html">Biography</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="writing.html">Writing</a>
-        <a href="version.html">Version</a>
-      </div>
+  <nav id="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+
+    <div id="hamitems">
+      <a href="index.html">Home</a>
+      <a class="active" href="bio.html">Biography</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="writing.html">Writing</a>
+      <a href="version.html">Version</a>
+    </div>
+  </nav>
 
     <div class="container">
       <div class="row">
@@ -38,7 +43,7 @@ gtag('config', 'UA-136768252-1');
 
       <div class="row">
         <div class="column-half">
-            <div class="card shadow">
+            <div class="card">
                 <div class="card-header">
                   Neil Phillips
                 </div>
@@ -52,7 +57,7 @@ gtag('config', 'UA-136768252-1');
         </div>
         <div class="column-half">
           <div class="wrapper">
-            <img src="images/me.jpg" alt="photo of neil">
+            <img class="circle shadow" src="images/me.jpg" alt="photo of neil">
           </div>
         </div>
       </div>

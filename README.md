@@ -1,4 +1,6 @@
-# portfolio
-Public portfolio of work updated to version 2 - using my new Unholy CSS styling.
+# Portfolio
 
-Version 2 uses version 0.1.0 of the CSS and as such does not contain a full set of features.
+Public portfolio built with the static, GitHub Pages-compatible Unholy CSS framework.
+
+This branch uses the breaking Unholy v3.0.0 release. The tagged framework styles are
+bundled in `css/unholy-v3.css`, with the site-specific additions in `css/custom.css`.

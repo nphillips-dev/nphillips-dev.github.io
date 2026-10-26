@@ -1,6 +1,6 @@
 .index-title
 {
-    font-size: 100px;
+    font-size: clamp(4rem, 14vw, 8rem);
     text-align: center;
 }
 
@@ -84,4 +84,19 @@
       width: 200px; 
       padding-top:2%;
       text-align: center;
+  }
+
+  .container {
+      padding-block: clamp(2rem, 6vw, 5rem);
+  }
+
+  .center-bio-title {
+      text-align: center;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+      .title-animate,
+      .subtitle-animate {
+          animation: none;
+      }
   }

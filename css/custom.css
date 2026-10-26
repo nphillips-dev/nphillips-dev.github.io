@@ -1,81 +1,152 @@
-.index-title
-{
-    font-size: clamp(4rem, 14vw, 8rem);
-    text-align: center;
+.home-hero {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.index-subtitle
-{
-    text-align: center;
+.hero-copy {
+    max-width: 56rem;
+    position: relative;
+    z-index: 2;
 }
 
-/*animations*/
-.title-animate {
-    position: relative;
-    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
-    animation-name: title;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;    
-  }
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes title {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-  }
-  
-  /* Standard syntax */
-  @keyframes title {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-  }
-  
-  .subtitle-animate {
-    position: relative;
-    -webkit-animation-name: subtitle; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-    animation-name: subtitle;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;  
-  }
-  
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes subtitle {
-    0%   {left:0px; top:0px;}
-    25%  {left:-150px; top:0px;}
-    50%  {left:-150px; top:-150px;}
-    75%  {left:0px; top:-300px;}
-    100% {left:0px; top:0px;}
-  }
-  
-  /* Standard syntax */
-  @keyframes subtitle {
-    0%   {left:0px; top:0px;}
-    25%  {left:-150px; top:0px;}
-    50%  {left:-150px; top:150px;}
-    75%  {left:0px; top:-100px;}
-    100% {left:0px; top:0px;}
-  }
-  
-  .fade-out {
-      -moz-transition: opacity 4s linear;
-      -o-transition: opacity 4s linear;
-      -webkit-transition: opacity 4s linear;
-      transition: opacity 4s linear;
-      opacity: 1;
-      text-align: center;
-  }
+.hero-kicker {
+    color: var(--unholy-main);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+
+.hero-copy h1 {
+    font-size: clamp(3.2rem, 7.5vw, 7rem);
+    letter-spacing: -0.065em;
+    line-height: 0.94;
+    margin-bottom: 1.75rem;
+    max-width: 11ch;
+}
+
+.hero-copy h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px color-mix(in srgb, var(--unholy-font) 72%, transparent);
+}
+
+.hero-summary {
+    color: color-mix(in srgb, var(--unholy-font) 74%, transparent);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    max-width: 35rem;
+}
+
+.hero-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero-text-link {
+    color: var(--unholy-font);
+    font-weight: 600;
+}
+
+.hero-text-link span {
+    color: var(--unholy-main);
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.hero-text-link:hover span {
+    transform: translateX(0.3rem);
+}
+
+.hero-system {
+    color: var(--unholy-main);
+    opacity: 0.48;
+    pointer-events: none;
+    position: absolute;
+    right: clamp(-15rem, -8vw, -5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(61vw, 54rem);
+    z-index: 1;
+}
+
+.hero-system::before {
+    background: color-mix(in srgb, var(--unholy-main) 18%, transparent);
+    border-radius: 50%;
+    content: "";
+    filter: blur(7rem);
+    inset: 20%;
+    position: absolute;
+}
+
+.hero-system svg {
+    overflow: visible;
+    width: 100%;
+}
+
+.system-path {
+    fill: none;
+    stroke: color-mix(in srgb, currentColor 46%, var(--unholy-border));
+    stroke-dasharray: 8 12;
+    stroke-linecap: round;
+    stroke-width: 1.5;
+}
+
+.path-one { animation: system-flow 22s linear infinite; }
+.path-two { animation: system-flow 28s linear infinite reverse; }
+.path-three { animation: system-flow 34s linear infinite; }
+
+.system-node {
+    fill: currentColor;
+    filter: drop-shadow(0 0 0.7rem currentColor);
+}
+
+.node-three {
+    animation: system-pulse 3.5s ease-in-out infinite;
+}
+
+.system-ring {
+    animation: system-pulse 3.5s ease-in-out infinite;
+    fill: none;
+    stroke: color-mix(in srgb, currentColor 62%, transparent);
+    stroke-width: 1.5;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes system-flow {
+    to { stroke-dashoffset: -200; }
+}
+
+@keyframes system-pulse {
+    0%, 100% { opacity: 0.45; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.12); }
+}
+
+@media screen and (max-width: 760px) {
+    .home-hero {
+        padding-block: 4rem;
+    }
+
+    .hero-copy {
+        max-width: 36rem;
+    }
+
+    .hero-system {
+        opacity: 0.2;
+        right: -19rem;
+        width: 46rem;
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+    }
+}
   
 
   .portfolio-intro p {
@@ -116,13 +187,126 @@
       padding-block: clamp(2rem, 6vw, 5rem);
   }
 
-  .center-bio-title {
-      text-align: center;
+  .bio-page {
+      min-height: calc(100vh - 60px);
+  }
+
+  .bio-layout {
+      align-items: center;
+      display: grid;
+      gap: clamp(3rem, 8vw, 7rem);
+      grid-template-columns: minmax(0, 1.15fr) minmax(17rem, 0.85fr);
+      margin-inline: auto;
+      max-width: 68rem;
+  }
+
+  .bio-copy {
+      max-width: 44rem;
+  }
+
+  .bio-kicker {
+      color: var(--unholy-main);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+  }
+
+  .bio-copy h1 {
+      font-size: clamp(2.8rem, 6vw, 5.25rem);
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+      margin-bottom: 1.75rem;
+  }
+
+  .bio-lead {
+      color: var(--unholy-font);
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 500;
+      line-height: 1.42;
+      margin-bottom: 2rem;
+      max-width: 30ch;
+  }
+
+  .bio-narrative {
+      color: color-mix(in srgb, var(--unholy-font) 78%, transparent);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 62ch;
+  }
+
+  .bio-narrative p + p {
+      margin-top: 1.25rem;
+  }
+
+  .bio-personal {
+      border-left: 3px solid var(--unholy-main);
+      margin-top: 2.5rem;
+      padding: 0.25rem 0 0.25rem 1.25rem;
+  }
+
+  .bio-personal h2 {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.65rem;
+      text-transform: uppercase;
+  }
+
+  .bio-personal p {
+      color: color-mix(in srgb, var(--unholy-font) 72%, transparent);
+      line-height: 1.65;
+      margin: 0;
+  }
+
+  .bio-portrait {
+      margin: 0;
+      position: relative;
+  }
+
+  .bio-portrait::before {
+      background: color-mix(in srgb, var(--unholy-main) 18%, transparent);
+      border-radius: 1.5rem;
+      content: "";
+      inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+      position: absolute;
+  }
+
+  .bio-portrait img {
+      aspect-ratio: 4 / 5;
+      border: 1px solid var(--unholy-border);
+      border-radius: 1.5rem;
+      object-fit: cover;
+      position: relative;
+      width: 100%;
+  }
+
+  @media screen and (max-width: 760px) {
+      .bio-layout {
+          align-items: start;
+          gap: 3rem;
+          grid-template-columns: 1fr;
+      }
+
+      .bio-copy,
+      .bio-lead {
+          max-width: none;
+      }
+
+      .bio-portrait {
+          margin-inline: auto;
+          max-width: 24rem;
+      }
   }
 
   @media (prefers-reduced-motion: reduce) {
-      .title-animate,
-      .subtitle-animate {
+      .system-path,
+      .system-node,
+      .system-ring {
           animation: none;
+      }
+
+      .hero-text-link span {
+          transition: none;
       }
   }

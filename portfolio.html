@@ -17,7 +17,6 @@ gtag('config', 'UA-136768252-1');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/unholy-v3.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/custom.js"></script>
 </head>
 <body>
@@ -30,29 +29,35 @@ gtag('config', 'UA-136768252-1');
           <a class="nav-item" href="index.html">Home</a>
           <a class="nav-item" href="bio.html">Biography</a>
           <a class="nav-item active" href="portfolio.html">Portfolio</a>
-          <a class="nav-item" href="writing.html">Writing</a>
-          <a class="nav-item" href="version.html">Version</a>
         </div>
       </nav>
 
     <div class="container">
 
-        <div class="row">
-            <h1>Portfolio</h1>
-        </div>  
+        <div class="row portfolio-intro">
+            <div class="box-large">
+                <h1>Projects</h1>
+                <p>
+                    A growing collection of personal projects, technical experiments and things I build to explore an idea.
+                    My professional work mostly lives elsewhere; this is the work I can share publicly.
+                </p>
+            </div>
+        </div>
 
         <div class="row">
             <div class="box-large">
                 <div class="card shadow shadow-hover">
+                    <p class="project-label text-uppercase">Open source</p>
                     <div class="card-header">
                         Unholy
                     </div>
                     <div class="card-content">
-                        My CSS boilerplate "framework" which is styling and providing the responsive design of this site.
-                        Currently under active development, version 3.0.0 was released 20/07/2026.
+                        A lightweight CSS framework I built for quickly creating responsive static sites.
+                        Version 3 is a modern rewrite using Flexbox, fluid typography, composable utilities and theme variables.
+                        This site is one of its working implementations.
                     </div>
                     <div class="card-action">
-                        <a class="button" href="https://github.com/nphillips-dev/Unholy" target="_blank" rel="noopener noreferrer">Check it out</a>
+                        <a class="button" href="https://github.com/nphillips-dev/Unholy" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -60,92 +65,53 @@ gtag('config', 'UA-136768252-1');
         <div class="row">
             <div class="box-large">
                 <div class="card shadow shadow-hover">
+                    <p class="project-label text-uppercase">Experiment</p>
                     <div class="card-header">
-                        Github
+                        Chuck Joke
                     </div>
                     <div class="card-content">
-                        All my ideas, snippets, projects and contributions.
-                        <strong>N.B.</strong> Only personal work is shown, professional contributions are under seperate accounts.
+                        A deliberately pointless joke dispenser and a small real-world test bed for Unholy.
+                        Built with semantic HTML, modern CSS and vanilla JavaScript, with keyboard controls and fallback content
+                        when the remote API is unavailable.
                     </div>
-                    <div class="card-action">
-                        <a class="button" href="https://github.com/nphillips-dev/" target="_blank" rel="noopener noreferrer">View here</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box-large">
-                <div class="card shadow shadow-hover">
-                    <div class="card-header">
-                        Chuck Jokes
-                    </div>
-                    <div class="card-content">
-                        <p>A just for fun site!</p>
-                        <p>A single page using just Unholy CSS and some JS to call the <a href="http://www.icndb.com/api/" target="_blank" rel="noopener noreferrer">Chuck Norris API</a>.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="button" href="https://chuckjoke.neocities.org/" target="_blank" rel="noopener noreferrer">Check it out</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box-large">
-                <div class="card shadow shadow-hover">
-                    <div class="card-header">
-                        Digital Blog
-                    </div>
-                    <div class="card-content">
-                        A wordpress site where I can store development blog posts, should I have the time and inclination.
-                    </div>
-                    <div class="card-action">
-                        <a class="button" href="https://nphillipsdev.wordpress.com" target="_blank"  rel="noopener noreferrer">Read here</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box-large">
-                <div class="card shadow shadow-hover">
-                    <div class="card-header">
-                        Wedding Website
-                    </div>
-                    <div class="card-content">
-                        This was a PHP site I created to provide my guests with information. 
-                        Hosting is ending in December 2020 and will not be renewed.
-                    </div>
-                    <div class="card-action">
-                        <a class="button" href="http://www.spanczakphillips.com" target="_blank" rel="noopener noreferrer">View here</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box-large">
-                <div class="card shadow shadow-hover">
-                    <div class="card-header">
-                        Whats in the dev site today?
-                    </div>
-                    <div class="card-content">
-                        A random sub domain of my wedding website, currently hosting some animated SVG learning I attempted.
-                        Hosting is ending in December 2020 and will not be renewed.
-                    </div>
-                    <div class="card-action">
-                        <a class="button" href="http://dev.spanczakphillips.com" target="_blank" rel="noopener noreferrer">Check it out</a>
+                    <div class="card-action project-actions">
+                        <a class="button" href="https://chuckjoke.neocities.org/" target="_blank" rel="noopener noreferrer">View project</a>
+                        <a class="button button-secondary" href="https://github.com/nphillips-dev/chuckjoke" target="_blank" rel="noopener noreferrer">View source</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row portfolio-section-heading">
             <div class="box-large">
-                <div class="center-portfolio-secondary">
-                    <a href="https://twitter.com/nphillips_dev"  target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
-                    <a href="https://www.linkedin.com/in/neil-phillips/"  target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
-                    <a href="https://www.reddit.com/user/nphillips_dev"  target="_blank" rel="noopener noreferrer" class="fa fa-reddit"></a>
+                <h2>Elsewhere</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box-medium">
+                <div class="card">
+                    <div class="card-header">GitHub</div>
+                    <div class="card-content">
+                        More projects, experiments and works in progress are available on GitHub.
+                    </div>
+                    <div class="card-action">
+                        <a class="button" href="https://github.com/nphillips-dev/" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+                    </div>
                 </div>
             </div>
-      </div>
+            <div class="box-medium">
+                <div class="card">
+                    <div class="card-header">LinkedIn</div>
+                    <div class="card-content">
+                        For professional experience and career history, find me on LinkedIn.
+                    </div>
+                    <div class="card-action">
+                        <a class="button" href="https://www.linkedin.com/in/neil-phillips/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
